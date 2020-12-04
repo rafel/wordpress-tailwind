@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "build:css": "NODE_ENV=production postcss style.css -o ../style.css",
+    "build:js": "uglifyjs script.js -o ../script.js --verbose",
+    "build": "npm run build:js & npm run build:css",
+    "watch:css": "postcss style.css -o ../style.css -w --verbose",
+    "watch:js": "copy-and-watch --watch ./script.js ../",
+    "watch": "npm-run-all --parallel watch:css watch:js"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.4",
+    "copy-and-watch": "^0.1.5",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1",
+    "uglify-js": "^3.12.1"
+  }
+}

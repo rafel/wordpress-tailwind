@@ -1,0 +1,50 @@
+/*!
+ * Theme Name: Wordpress Tailwind
+ * Description: Developed with love, a slim wordpress theme with tailwind.
+ * Version: 1.0.0
+ * Author: Rafel Ridha
+ * Tags: Wordpress tailwind, Slim Wordpress tailwind
+ *
+ */
+/*! purgecss start ignore */
+@import "tailwindcss/base";
+/*! purgecss end ignore */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Sample code */
+header, main, footer {
+  @apply max-w-screen-lg xl:max-w-screen-xl mx-auto px-4;
+}
+header {
+  @apply border-b border-gray-200 py-6 mb-16;
+}
+/*! purgecss start ignore */
+header ul {
+  @apply flex items-center overflow-auto;
+}
+header ul li {
+  @apply text-center p-4 pl-0 whitespace-nowrap;
+}
+/*! purgecss end ignore */
+main {
+  @apply min-h-screen;
+}
+article {
+  @apply mb-40;
+}
+article a {
+  @apply inline-flex text-lg sm:text-2xl text-blue-600 hover:text-blue-800;
+}
+h2 {
+  @apply text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900 mt-10 mb-5;
+}
+h1 {
+  @apply sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase;
+}
+p {
+  @apply max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-medium mb-4 sm:mb-8;
+}
+footer {
+  @apply border-t border-gray-200 pt-16 pb-12;
+}

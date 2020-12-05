@@ -26,4 +26,6 @@ Create a minified javascript file and a minified and purged css file for product
 
     npm run build
 
-You can now copy your theme to the production with minified assets. **Don't copy the dev folder or it's files to the server.**
+You can now copy your theme to the production with minified assets.
+
+**Don't copy the dev folder or it's files to the production server.**
